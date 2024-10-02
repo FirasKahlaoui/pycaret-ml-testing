@@ -6,7 +6,9 @@
 
 Make sure you have one of the following Python versions installed:
 
-  -Python 3.9
-  -Python 3.10
-  -Python 3.11
-| Note: PyCaret only supports these Python versions.
+- Python 3.9  
+- Python 3.10  
+- Python 3.11  
+
+> **Note**: PyCaret **only** supports these Python versions.
+
