@@ -6,3 +6,637 @@
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2024-10-05 09:47:36,954:WARNING:
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-05 09:52:41,605:INFO:PyCaret ClassificationExperiment
+2024-10-05 09:52:41,605:INFO:Logging name: clf-default-name
+2024-10-05 09:52:41,605:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-05 09:52:41,605:INFO:version 3.3.2
+2024-10-05 09:52:41,606:INFO:Initializing setup()
+2024-10-05 09:52:41,606:INFO:self.USI: 818e
+2024-10-05 09:52:41,606:INFO:self._variable_keys: {'log_plots_param', 'X_test', 'is_multiclass', 'fix_imbalance', 'logging_param', '_available_plots', 'gpu_n_jobs_param', 'fold_shuffle_param', 'pipeline', 'X_train', 'memory', 'fold_generator', 'fold_groups_param', '_ml_usecase', 'exp_id', 'gpu_param', 'y_train', 'n_jobs_param', 'USI', 'seed', 'y_test', 'data', 'target_param', 'idx', 'y', 'exp_name_log', 'X', 'html_param'}
+2024-10-05 09:52:41,606:INFO:Checking environment
+2024-10-05 09:52:41,606:INFO:python_version: 3.10.11
+2024-10-05 09:52:41,606:INFO:python_build: ('tags/v3.10.11:7d4cc5a', 'Apr  5 2023 00:38:17')
+2024-10-05 09:52:41,606:INFO:machine: AMD64
+2024-10-05 09:52:41,607:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-05 09:52:41,610:INFO:Memory: svmem(total=8490553344, available=1091698688, percent=87.1, used=7398854656, free=1091698688)
+2024-10-05 09:52:41,610:INFO:Physical Core: 2
+2024-10-05 09:52:41,610:INFO:Logical Core: 4
+2024-10-05 09:52:41,611:INFO:Checking libraries
+2024-10-05 09:52:41,611:INFO:System:
+2024-10-05 09:52:41,611:INFO:    python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2024-10-05 09:52:41,611:INFO:executable: c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\Scripts\python.exe
+2024-10-05 09:52:41,611:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-05 09:52:41,611:INFO:PyCaret required dependencies:
+2024-10-05 09:52:41,746:INFO:                 pip: 24.2
+2024-10-05 09:52:41,746:INFO:          setuptools: 65.5.0
+2024-10-05 09:52:41,746:INFO:             pycaret: 3.3.2
+2024-10-05 09:52:41,746:INFO:             IPython: 8.28.0
+2024-10-05 09:52:41,746:INFO:          ipywidgets: 8.1.5
+2024-10-05 09:52:41,746:INFO:                tqdm: 4.66.5
+2024-10-05 09:52:41,746:INFO:               numpy: 1.26.4
+2024-10-05 09:52:41,746:INFO:              pandas: 2.1.4
+2024-10-05 09:52:41,746:INFO:              jinja2: 3.1.4
+2024-10-05 09:52:41,746:INFO:               scipy: 1.11.4
+2024-10-05 09:52:41,746:INFO:              joblib: 1.3.2
+2024-10-05 09:52:41,746:INFO:             sklearn: 1.4.2
+2024-10-05 09:52:41,747:INFO:                pyod: 2.0.2
+2024-10-05 09:52:41,747:INFO:            imblearn: 0.12.4
+2024-10-05 09:52:41,747:INFO:   category_encoders: 2.6.4
+2024-10-05 09:52:41,747:INFO:            lightgbm: 4.5.0
+2024-10-05 09:52:41,747:INFO:               numba: 0.60.0
+2024-10-05 09:52:41,747:INFO:            requests: 2.32.3
+2024-10-05 09:52:41,747:INFO:          matplotlib: 3.7.5
+2024-10-05 09:52:41,747:INFO:          scikitplot: 0.3.7
+2024-10-05 09:52:41,747:INFO:         yellowbrick: 1.5
+2024-10-05 09:52:41,747:INFO:              plotly: 5.24.1
+2024-10-05 09:52:41,747:INFO:    plotly-resampler: Not installed
+2024-10-05 09:52:41,747:INFO:             kaleido: 0.2.1
+2024-10-05 09:52:41,748:INFO:           schemdraw: 0.15
+2024-10-05 09:52:41,748:INFO:         statsmodels: 0.14.4
+2024-10-05 09:52:41,748:INFO:              sktime: 0.26.0
+2024-10-05 09:52:41,748:INFO:               tbats: 1.1.3
+2024-10-05 09:52:41,748:INFO:            pmdarima: 2.0.4
+2024-10-05 09:52:41,748:INFO:              psutil: 6.0.0
+2024-10-05 09:52:41,748:INFO:          markupsafe: 2.1.5
+2024-10-05 09:52:41,748:INFO:             pickle5: Not installed
+2024-10-05 09:52:41,748:INFO:         cloudpickle: 3.0.0
+2024-10-05 09:52:41,748:INFO:         deprecation: 2.1.0
+2024-10-05 09:52:41,748:INFO:              xxhash: 3.5.0
+2024-10-05 09:52:41,748:INFO:           wurlitzer: Not installed
+2024-10-05 09:52:41,749:INFO:PyCaret optional dependencies:
+2024-10-05 09:52:41,774:INFO:                shap: Not installed
+2024-10-05 09:52:41,774:INFO:           interpret: Not installed
+2024-10-05 09:52:41,774:INFO:                umap: Not installed
+2024-10-05 09:52:41,774:INFO:     ydata_profiling: Not installed
+2024-10-05 09:52:41,774:INFO:  explainerdashboard: Not installed
+2024-10-05 09:52:41,774:INFO:             autoviz: Not installed
+2024-10-05 09:52:41,774:INFO:           fairlearn: Not installed
+2024-10-05 09:52:41,774:INFO:          deepchecks: Not installed
+2024-10-05 09:52:41,774:INFO:             xgboost: Not installed
+2024-10-05 09:52:41,774:INFO:            catboost: Not installed
+2024-10-05 09:52:41,774:INFO:              kmodes: Not installed
+2024-10-05 09:52:41,774:INFO:             mlxtend: Not installed
+2024-10-05 09:52:41,774:INFO:       statsforecast: Not installed
+2024-10-05 09:52:41,774:INFO:        tune_sklearn: Not installed
+2024-10-05 09:52:41,774:INFO:                 ray: Not installed
+2024-10-05 09:52:41,775:INFO:            hyperopt: Not installed
+2024-10-05 09:52:41,775:INFO:              optuna: Not installed
+2024-10-05 09:52:41,775:INFO:               skopt: Not installed
+2024-10-05 09:52:41,775:INFO:              mlflow: Not installed
+2024-10-05 09:52:41,775:INFO:              gradio: Not installed
+2024-10-05 09:52:41,775:INFO:             fastapi: Not installed
+2024-10-05 09:52:41,775:INFO:             uvicorn: Not installed
+2024-10-05 09:52:41,775:INFO:              m2cgen: Not installed
+2024-10-05 09:52:41,775:INFO:           evidently: Not installed
+2024-10-05 09:52:41,775:INFO:               fugue: Not installed
+2024-10-05 09:52:41,775:INFO:           streamlit: Not installed
+2024-10-05 09:52:41,775:INFO:             prophet: Not installed
+2024-10-05 09:52:41,775:INFO:None
+2024-10-05 09:52:41,775:INFO:Set up data.
+2024-10-05 09:52:41,794:INFO:Set up folding strategy.
+2024-10-05 09:52:41,794:INFO:Set up train/test split.
+2024-10-05 09:52:41,815:INFO:Set up index.
+2024-10-05 09:52:41,816:INFO:Assigning column types.
+2024-10-05 09:52:41,827:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-10-05 09:52:41,919:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-05 09:52:41,930:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-05 09:52:42,002:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,002:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,054:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-05 09:52:42,056:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-05 09:52:42,090:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,090:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,091:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-10-05 09:52:42,143:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-05 09:52:42,178:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,178:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,233:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-05 09:52:42,266:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,266:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,266:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-10-05 09:52:42,360:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,360:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,462:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,463:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,478:INFO:Preparing preprocessing pipeline...
+2024-10-05 09:52:42,479:INFO:Set up label encoding.
+2024-10-05 09:52:42,479:INFO:Set up simple imputation.
+2024-10-05 09:52:42,509:INFO:Finished creating preprocessing pipeline.
+2024-10-05 09:52:42,524:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Kahla\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['sepal_length', 'sepal_width',
+                                             'petal_length', 'petal_width'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent')))],
+         verbose=False)
+2024-10-05 09:52:42,524:INFO:Creating final display dataframe.
+2024-10-05 09:52:42,622:INFO:Setup _display_container:                     Description  \
+0                    Session id   
+1                        Target   
+2                   Target type   
+3                Target mapping   
+4           Original data shape   
+5        Transformed data shape   
+6   Transformed train set shape   
+7    Transformed test set shape   
+8              Numeric features   
+9                    Preprocess   
+10              Imputation type   
+11           Numeric imputation   
+12       Categorical imputation   
+13               Fold Generator   
+14                  Fold Number   
+15                     CPU Jobs   
+16                      Use GPU   
+17               Log Experiment   
+18              Experiment Name   
+19                          USI   
+
+                                                Value  
+0                                                6473  
+1                                             species  
+2                                          Multiclass  
+3   Iris-setosa: 0, Iris-versicolor: 1, Iris-virgi...  
+4                                            (150, 5)  
+5                                            (150, 5)  
+6                                            (105, 5)  
+7                                             (45, 5)  
+8                                                   4  
+9                                                True  
+10                                             simple  
+11                                               mean  
+12                                               mode  
+13                                    StratifiedKFold  
+14                                                 10  
+15                                                 -1  
+16                                              False  
+17                                              False  
+18                                   clf-default-name  
+19                                               818e  
+2024-10-05 09:52:42,852:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,853:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,942:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,942:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-05 09:52:42,944:INFO:setup() successfully completed in 1.35s...............
+2024-10-05 09:53:00,357:INFO:Initializing create_model()
+2024-10-05 09:53:00,358:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-05 09:53:00,358:INFO:Checking exceptions
+2024-10-05 09:53:00,392:INFO:Importing libraries
+2024-10-05 09:53:00,393:INFO:Copying training dataset
+2024-10-05 09:53:00,403:INFO:Defining folds
+2024-10-05 09:53:00,403:INFO:Declaring metric variables
+2024-10-05 09:53:00,414:INFO:Importing untrained model
+2024-10-05 09:53:00,424:INFO:Random Forest Classifier Imported successfully
+2024-10-05 09:53:00,445:INFO:Starting cross validation
+2024-10-05 09:53:00,449:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-05 09:53:17,694:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:17,694:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:17,698:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:17,700:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:17,700:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:17,703:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:17,706:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:17,708:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:17,708:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:17,708:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,199:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,213:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,215:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,216:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,221:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,222:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,222:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,227:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,228:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,236:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,579:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,584:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,584:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,589:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:53:18,604:INFO:Calculating mean and std
+2024-10-05 09:53:18,609:INFO:Creating metrics dataframe
+2024-10-05 09:53:18,629:INFO:Finalizing model
+2024-10-05 09:53:18,876:INFO:Uploading results into container
+2024-10-05 09:53:18,877:INFO:Uploading model into container now
+2024-10-05 09:53:18,910:INFO:_master_model_container: 1
+2024-10-05 09:53:18,910:INFO:_display_container: 2
+2024-10-05 09:53:18,911:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False)
+2024-10-05 09:53:18,911:INFO:create_model() successfully completed......................................
+2024-10-05 09:53:32,751:INFO:Initializing evaluate_model()
+2024-10-05 09:53:32,752:INFO:evaluate_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None)
+2024-10-05 09:53:32,879:INFO:Initializing plot_model()
+2024-10-05 09:53:32,879:INFO:plot_model(plot=pipeline, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:53:32,879:INFO:Checking exceptions
+2024-10-05 09:53:32,935:INFO:Preloading libraries
+2024-10-05 09:53:32,948:INFO:Copying training dataset
+2024-10-05 09:53:32,948:INFO:Plot type: pipeline
+2024-10-05 09:53:33,430:INFO:Visual Rendered Successfully
+2024-10-05 09:53:33,506:INFO:plot_model() successfully completed......................................
+2024-10-05 09:53:38,636:INFO:Initializing plot_model()
+2024-10-05 09:53:38,637:INFO:plot_model(plot=manifold, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:53:38,637:INFO:Checking exceptions
+2024-10-05 09:53:44,545:INFO:Initializing plot_model()
+2024-10-05 09:53:44,545:INFO:plot_model(plot=parameter, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:53:44,545:INFO:Checking exceptions
+2024-10-05 09:53:44,590:INFO:Preloading libraries
+2024-10-05 09:53:44,604:INFO:Copying training dataset
+2024-10-05 09:53:44,605:INFO:Plot type: parameter
+2024-10-05 09:53:44,609:INFO:Visual Rendered Successfully
+2024-10-05 09:53:44,692:INFO:plot_model() successfully completed......................................
+2024-10-05 09:53:46,162:INFO:Initializing plot_model()
+2024-10-05 09:53:46,162:INFO:plot_model(plot=auc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:53:46,163:INFO:Checking exceptions
+2024-10-05 09:53:46,210:INFO:Preloading libraries
+2024-10-05 09:53:46,219:INFO:Copying training dataset
+2024-10-05 09:53:46,219:INFO:Plot type: auc
+2024-10-05 09:53:46,316:INFO:Fitting Model
+2024-10-05 09:53:46,327:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+
+2024-10-05 09:53:46,328:INFO:Scoring test/hold-out set
+2024-10-05 09:53:46,651:INFO:Visual Rendered Successfully
+2024-10-05 09:53:46,725:INFO:plot_model() successfully completed......................................
+2024-10-05 09:53:51,207:INFO:Initializing plot_model()
+2024-10-05 09:53:51,207:INFO:plot_model(plot=ks, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:53:51,207:INFO:Checking exceptions
+2024-10-05 09:53:51,247:INFO:Preloading libraries
+2024-10-05 09:53:51,255:INFO:Copying training dataset
+2024-10-05 09:53:51,255:INFO:Plot type: ks
+2024-10-05 09:53:51,255:INFO:Generating predictions / predict_proba on X_test
+2024-10-05 09:53:54,737:INFO:Initializing plot_model()
+2024-10-05 09:53:54,737:INFO:plot_model(plot=lift, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:53:54,737:INFO:Checking exceptions
+2024-10-05 09:53:54,774:INFO:Preloading libraries
+2024-10-05 09:53:54,789:INFO:Copying training dataset
+2024-10-05 09:53:54,789:INFO:Plot type: lift
+2024-10-05 09:53:54,789:INFO:Generating predictions / predict_proba on X_test
+2024-10-05 09:53:57,272:INFO:Initializing plot_model()
+2024-10-05 09:53:57,272:INFO:plot_model(plot=vc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:53:57,273:INFO:Checking exceptions
+2024-10-05 09:53:57,313:INFO:Preloading libraries
+2024-10-05 09:53:57,327:INFO:Copying training dataset
+2024-10-05 09:53:57,327:INFO:Plot type: vc
+2024-10-05 09:53:57,327:INFO:Determining param_name
+2024-10-05 09:53:57,327:INFO:param_name: max_depth
+2024-10-05 09:53:57,463:INFO:Fitting Model
+2024-10-05 09:54:09,130:INFO:Visual Rendered Successfully
+2024-10-05 09:54:09,248:INFO:plot_model() successfully completed......................................
+2024-10-05 09:54:09,300:INFO:Initializing plot_model()
+2024-10-05 09:54:09,301:INFO:plot_model(plot=pipeline, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:54:09,301:INFO:Checking exceptions
+2024-10-05 09:54:09,373:INFO:Preloading libraries
+2024-10-05 09:54:09,391:INFO:Copying training dataset
+2024-10-05 09:54:09,391:INFO:Plot type: pipeline
+2024-10-05 09:54:09,547:INFO:Visual Rendered Successfully
+2024-10-05 09:54:09,655:INFO:plot_model() successfully completed......................................
+2024-10-05 09:54:10,762:INFO:Initializing plot_model()
+2024-10-05 09:54:10,763:INFO:plot_model(plot=vc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:54:10,764:INFO:Checking exceptions
+2024-10-05 09:54:10,805:INFO:Preloading libraries
+2024-10-05 09:54:10,812:INFO:Copying training dataset
+2024-10-05 09:54:10,812:INFO:Plot type: vc
+2024-10-05 09:54:10,813:INFO:Determining param_name
+2024-10-05 09:54:10,813:INFO:param_name: max_depth
+2024-10-05 09:54:10,878:INFO:Fitting Model
+2024-10-05 09:54:21,928:INFO:Visual Rendered Successfully
+2024-10-05 09:54:22,038:INFO:plot_model() successfully completed......................................
+2024-10-05 09:54:22,091:INFO:Initializing plot_model()
+2024-10-05 09:54:22,091:INFO:plot_model(plot=auc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:54:22,092:INFO:Checking exceptions
+2024-10-05 09:54:22,130:INFO:Preloading libraries
+2024-10-05 09:54:22,185:INFO:Copying training dataset
+2024-10-05 09:54:22,185:INFO:Plot type: auc
+2024-10-05 09:54:22,297:INFO:Fitting Model
+2024-10-05 09:54:22,298:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+
+2024-10-05 09:54:22,298:INFO:Scoring test/hold-out set
+2024-10-05 09:54:22,614:INFO:Visual Rendered Successfully
+2024-10-05 09:54:22,718:INFO:plot_model() successfully completed......................................
+2024-10-05 09:54:24,827:INFO:Initializing plot_model()
+2024-10-05 09:54:24,827:INFO:plot_model(plot=error, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:54:24,828:INFO:Checking exceptions
+2024-10-05 09:54:24,874:INFO:Preloading libraries
+2024-10-05 09:54:24,881:INFO:Copying training dataset
+2024-10-05 09:54:24,881:INFO:Plot type: error
+2024-10-05 09:54:24,946:INFO:Fitting Model
+2024-10-05 09:54:24,946:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+
+2024-10-05 09:54:24,946:INFO:Scoring test/hold-out set
+2024-10-05 09:54:25,306:INFO:Visual Rendered Successfully
+2024-10-05 09:54:25,408:INFO:plot_model() successfully completed......................................
+2024-10-05 09:54:28,948:INFO:Initializing plot_model()
+2024-10-05 09:54:28,948:INFO:plot_model(plot=vc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:54:28,948:INFO:Checking exceptions
+2024-10-05 09:54:28,984:INFO:Preloading libraries
+2024-10-05 09:54:28,991:INFO:Copying training dataset
+2024-10-05 09:54:28,991:INFO:Plot type: vc
+2024-10-05 09:54:28,991:INFO:Determining param_name
+2024-10-05 09:54:28,991:INFO:param_name: max_depth
+2024-10-05 09:54:29,057:INFO:Fitting Model
+2024-10-05 09:54:41,260:INFO:Visual Rendered Successfully
+2024-10-05 09:54:41,376:INFO:plot_model() successfully completed......................................
+2024-10-05 09:54:45,615:INFO:Initializing plot_model()
+2024-10-05 09:54:45,615:INFO:plot_model(plot=feature_all, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:54:45,616:INFO:Checking exceptions
+2024-10-05 09:54:45,663:INFO:Preloading libraries
+2024-10-05 09:54:45,675:INFO:Copying training dataset
+2024-10-05 09:54:45,675:INFO:Plot type: feature_all
+2024-10-05 09:54:45,693:WARNING:No coef_ found. Trying feature_importances_
+2024-10-05 09:54:45,819:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\matplotlib\_tight_bbox.py:67: RuntimeWarning: divide by zero encountered in scalar divide
+  fig.patch.set_bounds(x0 / w1, y0 / h1,
+
+2024-10-05 09:54:45,819:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\matplotlib\_tight_bbox.py:68: RuntimeWarning: divide by zero encountered in scalar divide
+  fig.bbox.width / w1, fig.bbox.height / h1)
+
+2024-10-05 09:54:45,822:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\matplotlib\patches.py:739: RuntimeWarning: invalid value encountered in scalar add
+  y1 = self.convert_yunits(self._y0 + self._height)
+
+2024-10-05 09:54:45,824:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\matplotlib\transforms.py:2050: RuntimeWarning: invalid value encountered in scalar add
+  self._mtx[1, 2] += ty
+
+2024-10-05 09:54:45,857:INFO:Visual Rendered Successfully
+2024-10-05 09:54:45,934:INFO:plot_model() successfully completed......................................
+2024-10-05 09:54:49,098:INFO:Initializing plot_model()
+2024-10-05 09:54:49,099:INFO:plot_model(plot=lift, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:54:49,099:INFO:Checking exceptions
+2024-10-05 09:54:49,138:INFO:Preloading libraries
+2024-10-05 09:54:49,151:INFO:Copying training dataset
+2024-10-05 09:54:49,151:INFO:Plot type: lift
+2024-10-05 09:54:49,151:INFO:Generating predictions / predict_proba on X_test
+2024-10-05 09:55:05,417:INFO:Initializing predict_model()
+2024-10-05 09:55:05,417:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000192288FCEE0>)
+2024-10-05 09:55:05,417:INFO:Checking exceptions
+2024-10-05 09:55:05,417:INFO:Preloading libraries
+2024-10-05 09:55:05,643:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:55:05,649:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:55:05,654:WARNING:c:\Users\Kahla\OneDrive\Documents\pycaret\myenv\lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Iris-virginica') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-05 09:55:14,091:INFO:Initializing plot_model()
+2024-10-05 09:55:14,091:INFO:plot_model(plot=parameter, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:55:14,091:INFO:Checking exceptions
+2024-10-05 09:55:14,136:INFO:Preloading libraries
+2024-10-05 09:55:14,147:INFO:Copying training dataset
+2024-10-05 09:55:14,147:INFO:Plot type: parameter
+2024-10-05 09:55:14,151:INFO:Visual Rendered Successfully
+2024-10-05 09:55:14,237:INFO:plot_model() successfully completed......................................
+2024-10-05 09:55:19,061:INFO:Initializing plot_model()
+2024-10-05 09:55:19,061:INFO:plot_model(plot=gain, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:55:19,061:INFO:Checking exceptions
+2024-10-05 09:55:19,112:INFO:Preloading libraries
+2024-10-05 09:55:19,119:INFO:Copying training dataset
+2024-10-05 09:55:19,119:INFO:Plot type: gain
+2024-10-05 09:55:19,119:INFO:Generating predictions / predict_proba on X_test
+2024-10-05 09:55:20,945:INFO:Initializing plot_model()
+2024-10-05 09:55:20,946:INFO:plot_model(plot=boundary, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=6473, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000192115EFB20>, system=True)
+2024-10-05 09:55:20,946:INFO:Checking exceptions
+2024-10-05 09:55:20,978:INFO:Preloading libraries
+2024-10-05 09:55:20,988:INFO:Copying training dataset
+2024-10-05 09:55:20,988:INFO:Plot type: boundary
+2024-10-05 09:55:21,043:INFO:Fitting StandardScaler()
+2024-10-05 09:55:21,046:INFO:Fitting PCA()
+2024-10-05 09:55:21,113:INFO:Fitting Model
+2024-10-05 09:55:22,557:INFO:Visual Rendered Successfully
+2024-10-05 09:55:22,809:INFO:plot_model() successfully completed......................................
